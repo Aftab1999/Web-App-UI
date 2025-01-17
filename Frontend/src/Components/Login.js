@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Button, 
-  TextField, 
-  Grid, 
-  Typography, 
-  Container, 
-  Checkbox, 
-  FormControlLabel 
+import {
+  Button,
+  TextField,
+  Grid,
+  Typography,
+  Container,
+  Checkbox,
+  FormControlLabel
 } from '@mui/material';
 
 import '../assets/Css/Login.css';
@@ -28,25 +28,19 @@ function Login() {
     <Container maxWidth="lg" className="login-container">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} container justifyContent="center" alignItems="center">
-          <img 
+          <img
             src={loginImg}
-            alt="Sign Up" 
+            alt="Sign Up"
             className="login-image"
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <div className="login-form">
-            {/* <img 
-              src={LogoImg}
-              alt="Company Logo" 
-              className="login-logo"
-            /> */}
+
             <Typography variant="h4" className="login-title">
               Sign in to your account
             </Typography>
-            <Typography variant="body2" color="textSecondary" align="center">
-              Or <Link to="/signup" style={{ color: '#1976d2' }}>start your 14-day free trial</Link>
-            </Typography>
+
             <form onSubmit={handleSubmit}>
               <TextField
                 fullWidth

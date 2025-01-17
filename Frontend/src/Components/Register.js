@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Button, 
-  TextField, 
-  Grid, 
-  Typography, 
-  Container, 
-  Checkbox, 
-  FormControlLabel 
+import {
+  Button,
+  TextField,
+  Grid,
+  Typography,
+  Container,
+  Checkbox,
+  FormControlLabel
 } from '@mui/material';
 import '../assets/Css/Login.css';
 
@@ -109,15 +109,15 @@ function Register() {
                 Sign Up
               </Button>
             </form>
-            <Typography style={{ marginTop: '20px' }}>
+            <Typography style={{ marginTop: '20px !important' }}>
               Already have an account? <Link to="/login">Sign in now</Link>
             </Typography>
           </div>
         </Grid>
         <Grid item xs={12} md={6} container justifyContent="center" alignItems="center">
-          <img 
-            src={SignupImg} 
-            alt="Register" 
+          <img
+            src={SignupImg}
+            alt="Register"
             className="register-image"
           />
         </Grid>
