@@ -5,24 +5,17 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Container, AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import Home from './Pages/Home';
 
 
 function App() {
   return (
     <Router>
-      <div className="App">
-
-
-      
-        <Container style={{ marginTop: '20px' }}>
-          <Routes>
-          
-            <Route path="/" element={<Login />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
-        </Container>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </Router>
   );
 }
