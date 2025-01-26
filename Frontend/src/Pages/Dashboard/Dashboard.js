@@ -18,6 +18,7 @@ import { Link } from 'react-router-dom'
 import { drawerItems } from '../../Components/Drawer/drawerItems'
 import appLogo from '../../assets/Images/MM_Logo.webp'
 import DashboardRoutes from '../../routes/DashboardRoutes'
+import Settings from '../../Pages/Dashboard/Settings'
 import avatar1 from '../../assets/avatars/image-29.png'
 
 const drawerWidth = 240
@@ -205,7 +206,8 @@ function Dashboard() {
                     }}
                 >
                     <Grid container maxWidth="lg">
-                        <DashboardRoutes />
+                        {/* <DashboardRoutes /> */}
+                        <Settings />
                     </Grid>
                 </Box>
             </Box>

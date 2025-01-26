@@ -5,14 +5,14 @@ import Settings from '../Pages/Dashboard/Settings';
 const DashboardRoutes = () => {
     return (
         <Routes>
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Settings />} />
-            <Route path="/home" element={<Navigate replace to="/home" />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Settings />} />
+            <Route path="/coming-soon" element={<Navigate replace to="/home" />} />
         </Routes>
     )
 }
