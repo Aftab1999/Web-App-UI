@@ -117,7 +117,7 @@ export default function Footer() {
             <Box className="copyright_section">
                 <Container>
                     <Typography className="copyright_text">
-                        Copyright 2020 All Rights Reserved.<a href="https://html.design"> Free html Templates</a>
+                        Copyright 2025 All Rights Reserved.<a href="https://marketmindsadvisory.com/" target="_blank"> Market Minds Advisory</a>
                     </Typography>
                 </Container>
             </Box>
