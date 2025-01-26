@@ -6,6 +6,9 @@ import { Container, AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Home from './Pages/Home';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Settings from './Pages/Dashboard/Settings';
+
 
 
 function App() {
@@ -15,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/coming-soon" element={<Settings />} />
       </Routes>
     </Router>
   );
