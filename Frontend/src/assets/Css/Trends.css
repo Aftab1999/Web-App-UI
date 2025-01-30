@@ -1,0 +1,456 @@
+.wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.mf_table_container {
+  box-shadow: none !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px !important;
+}
+
+.mf_table_root {
+  min-width: 650px;
+}
+
+.mf_header_cell {
+  color: #666 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  border-bottom: 2px solid #f0f0f0 !important;
+  text-align: center !important;
+}
+
+.mf_scheme_header {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.mf_scheme_header-icon {
+  color: #666 !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  border-bottom: 2px solid #f0f0f0 !important;
+  text-align: center !important;
+}
+
+.mf_scheme_header-icon svg {
+  color: #0b24c2 !important;
+  font-size: 30px;
+}
+
+.mf_table_row:hover {
+  background-color: #f8f9fa;
+}
+
+.mf_scheme_cell {
+  padding: 16px !important;
+}
+
+.mf_scheme_content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mf_fund_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.mf_scheme_details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mf_scheme_name {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.mf_scheme_info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mf_risk_label,
+.mf_type_label {
+  color: #666;
+  font-size: 12px;
+}
+
+.mf_dot {
+  color: #666;
+  font-size: 12px;
+}
+
+.mf_returns_cell {
+  font-weight: 500 !important;
+  color: #333 !important;
+  font-size: 14px !important;
+  text-align: center !important;
+}
+
+.mf_filters_container {
+  width: 100%;
+  max-width: 400px;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgb(241, 244, 249);
+}
+
+.mf_filters_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background: rgb(241, 244, 249) !important;
+}
+
+.mf_filters_title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.mf_clear_btn {
+  background: none;
+  border: none;
+  color: #0b24c2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.mf_accordion {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.mf_accordion:before {
+  display: none;
+}
+
+/* .mf_search_field {
+    margin-bottom: 16px !important;
+  } */
+
+.mf_search_field .MuiOutlinedInput-root {
+  border-radius: 30px !important;
+  height: 45px !important;
+  margin-bottom: 16px !important;
+}
+
+.mf_checkbox_group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mf_checkbox_label {
+  margin: 0 !important;
+}
+
+.mf_nested_accordion {
+  /* margin: 0 !important; */
+  margin-top: -20px !important;
+  box-shadow: none !important;
+}
+
+.mf_nested_accordion:before {
+  display: none;
+}
+
+.mf_nested_checkbox {
+  padding-left: 32px;
+}
+
+.scrollable-list {
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 8px; /* Space for the scrollbar */
+}
+
+/* Override MUI styles */
+.mf_accordion .MuiAccordionSummary-root {
+  min-height: 48px;
+}
+
+.mf_accordion .MuiAccordionDetails-root {
+  padding: 8px 16px 16px;
+}
+
+.mf_nested_accordion .MuiAccordionSummary-root {
+  padding: 0;
+}
+
+.mf_nested_accordion .MuiAccordionDetails-root {
+  padding: 0;
+}
+
+.search-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-results-text {
+  color: #3e4154 !important;
+  font-size: 16px;
+}
+
+.search-count {
+  font-weight: 500;
+  color: #000000;
+}
+
+.sort-select-container {
+  min-width: 200px;
+}
+
+.sort-select
+  .css-jd1zyo-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-jd1zyo-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-jd1zyo-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+  padding-right: 60px !important;
+  color: #3e4154 !important;
+  font-size: 16px !important;
+}
+
+.MuiSelect-icon {
+  color: #3e4154 !important;
+}
+
+.mutual-header-text {
+  color: #3e4154 !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+
+.mutual-summary-text {
+  color: #3e4154 !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  margin-left: 5px !important;
+}
+
+.mf_checkbox_group {
+  display: flex;
+  flex-direction: column;
+  margin-left: -8px;
+  /* gap: 0px; */
+}
+
+.mf_nested_accordion .nested-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* Adjust spacing between checkboxes */
+  padding-left: 16px;
+  /* Add indentation for nested checkboxes */
+}
+
+.mf_checkbox_label {
+  font-size: 14px;
+  color: #333;
+}
+
+.mf_nested_checkbox {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.mf_nested_checkbox-mt {
+  margin-top: -16px;
+}
+
+/* ----------------- */
+
+.receipt-wrapper {
+  padding: 0px 25px;
+  border-radius: 8px;
+}
+
+.receipt-wrapper-box {
+  border: 1px solid #ededed !important;
+  border-radius: 10px !important;
+  padding: 22px;
+}
+
+.receipt-wrapper-box2 {
+  border: 1px solid #ededed !important;
+  border-radius: 10px !important;
+  margin-bottom: 20px;
+}
+
+.oder-details-status {
+  padding: 25px 30px 0px 30px;
+}
+
+.oder-card-margin {
+  margin-top: 30px !important;
+}
+
+.scheme-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.scheme-icon {
+  margin: 0;
+}
+
+.scheme-icon img {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  border-radius: 8px;
+}
+
+.scheme-content {
+  flex: 1;
+}
+
+.scheme-title {
+  font-weight: 400 !important;
+  color: rgba(62, 65, 84, 1) !important;
+  font-family: "roboto" !important;
+  margin: 0;
+}
+
+.scheme-subtitle {
+  color: rgba(62, 65, 84, 1) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  margin: 0;
+}
+
+.scheme-amount {
+  font-weight: 600 !important;
+  color: rgba(62, 65, 84, 1) !important;
+  font-size: 18px !important;
+  text-align: right;
+}
+
+.transaction-row {
+  margin-bottom: 16px;
+}
+
+.transaction-label {
+  color: rgba(86, 90, 113, 1) !important;
+  font-size: 14px;
+  font-family: "roboto" !important;
+}
+
+.transaction-value {
+  color: rgba(62, 65, 84, 1) !important;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "roboto" !important;
+}
+
+.transaction-value2 {
+  color: rgba(62, 65, 84, 1) !important;
+  font-weight: 400;
+  font-size: 16px;
+  word-wrap: break-word; /* Break long words */
+  word-break: break-word; /* Fallback for older browsers */
+}
+
+.copy-button {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+/* .status-container {
+    padding-left: 24px;
+  } */
+
+.status-heading {
+  color: var(--h-color) !important;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.status-subheading {
+  color: var(--h-color) !important;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400 !important;
+  padding: 2px;
+}
+
+.status-heading-divider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 30px !important;
+}
+
+.status-heading-divider2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.status-stepper-icon .MuiStepIcon-root {
+  color: #0b24c2 !important;
+}
+
+.status-icon-bgcolor {
+  color: #0b24c2 !important;
+  font-size: 25px !important;
+}
+
+.status-icon-color {
+  width: 24px;
+}
+
+.status-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.status-icon {
+  color: #0b24c2;
+}
+
+.status-info {
+  flex: 1;
+}
+
+.status-text {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.status-timestamp {
+  color: #666;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.card-sip-details {
+  padding: 0px 25px 0px 26px;
+}
