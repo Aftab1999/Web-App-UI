@@ -24,9 +24,13 @@ import {
     Tab,
     Menu,
     Paper,
-    InputAdornment
+    InputAdornment,
+    Stack
 } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import { Download as DownloadIcon } from '@phosphor-icons/react/dist/ssr/Download';
+import { Upload as UploadIcon } from '@phosphor-icons/react/dist/ssr/Upload';
+import { Plus as PlusIcon } from '@phosphor-icons/react/dist/ssr/Plus';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Header from "../Header/Navbar";
@@ -51,6 +55,7 @@ import MinimizeIcon from '@mui/icons-material/Minimize';
 import TreandsChat from "../../Components/Charts/Treands-chat"
 import HightgrowthmarketList from "../../Components/Table/Hight-growth-market"
 import Largestmarketlist from "../../Components/Table/largestmarket";
+import Fastedgrowinglist from "../../Components/Table/Fastedgrowing";
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 
@@ -157,7 +162,7 @@ function Dashboard() {
 
                 <Grid container spacing={3}>
 
-                    <Grid item xs={12} md={4} mb={2}>
+                    <Grid item xs={12} md={3} mb={2}>
 
                         <div className="mf_filters_container">
                             <div className="mf_filters_header">
@@ -470,7 +475,7 @@ function Dashboard() {
 
                     </Grid>
 
-                    <Grid item xs={12} md={8}>
+                    <Grid item xs={12} md={9}>
 
                         <Typography className='trends-header'> High Growth Markets </Typography>
 
@@ -481,8 +486,96 @@ function Dashboard() {
                         <Box>
                             <HightgrowthmarketList />
                         </Box>
-                        <Box>
-                            <Largestmarketlist />
+
+
+                        <Box mt={5}>
+                            {/* <Typography className='trends-header'> largest Market </Typography> */}
+
+                            <Stack direction="row" spacing={3}>
+
+                                <Stack spacing={1} sx={{ flex: '1 1 auto', }}>
+                                    <Typography className='trends-header'> largest Market </Typography>
+                                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
+                                        <Button color="inherit" startIcon={<UploadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Import
+                                        </Button>
+                                        <Button color="inherit" startIcon={<DownloadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Export
+                                        </Button>
+                                    </Stack>
+                                </Stack>
+
+                                <div>
+                                    <Button startIcon={<PlusIcon fontSize="var(--icon-fontSize-md)" />} variant="contained">
+                                        Add
+                                    </Button>
+                                </div>
+                            </Stack>
+
+                            <Box>
+                                <Largestmarketlist />
+                            </Box>
+
+                        </Box>
+
+                        <Box mt={5}>
+                            {/* <Typography className='trends-header'> largest Market </Typography> */}
+
+                            <Stack direction="row" spacing={3}>
+
+                                <Stack spacing={1} sx={{ flex: '1 1 auto', }}>
+                                    <Typography className='trends-header'>  Fasted Growing Markets </Typography>
+                                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
+                                        <Button color="inherit" startIcon={<UploadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Import
+                                        </Button>
+                                        <Button color="inherit" startIcon={<DownloadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Export
+                                        </Button>
+                                    </Stack>
+                                </Stack>
+
+                                <div>
+                                    <Button startIcon={<PlusIcon fontSize="var(--icon-fontSize-md)" />} variant="contained">
+                                        Add
+                                    </Button>
+                                </div>
+                            </Stack>
+
+                            <Box>
+                                <Fastedgrowinglist />
+                            </Box>
+
+                        </Box>
+
+                        <Box mt={5}>
+                            {/* <Typography className='trends-header'> largest Market </Typography> */}
+
+                            <Stack direction="row" spacing={3}>
+
+                                <Stack spacing={1} sx={{ flex: '1 1 auto', }}>
+                                    <Typography className='trends-header'>  Tranding Markets</Typography>
+                                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
+                                        <Button color="inherit" startIcon={<UploadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Import
+                                        </Button>
+                                        <Button color="inherit" startIcon={<DownloadIcon fontSize="var(--icon-fontSize-md)" />}>
+                                            Export
+                                        </Button>
+                                    </Stack>
+                                </Stack>
+
+                                <div>
+                                    <Button startIcon={<PlusIcon fontSize="var(--icon-fontSize-md)" />} variant="contained">
+                                        Add
+                                    </Button>
+                                </div>
+                            </Stack>
+
+                            <Box>
+                                <Fastedgrowinglist />
+                            </Box>
+
                         </Box>
 
                     </Grid>

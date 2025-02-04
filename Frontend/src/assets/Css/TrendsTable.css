@@ -1,7 +1,10 @@
-.MuiTableHead-root .MuiTableCell-root {
-  background-color: #1a237e;
-  color: white;
-  font-weight: bold;
+.treands-table-header {
+  background-color: #1a237e !important;
+}
+
+.treands-table-header th {
+  color: white !important;
+  font-weight: bold !important;
 }
 
 .MuiTableRow-root:nth-of-type(odd) {

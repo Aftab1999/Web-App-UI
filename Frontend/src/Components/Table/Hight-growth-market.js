@@ -29,7 +29,7 @@ function MarketTable() {
             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
-                        <TableRow>
+                        <TableRow className="treands-table-header">
                             <TableCell>MARKET</TableCell>
                             <TableCell align="right">2022</TableCell>
                             <TableCell align="right">2023</TableCell>

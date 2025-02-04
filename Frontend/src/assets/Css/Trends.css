@@ -99,14 +99,10 @@
 
 .mf_filters_container {
   width: 100%;
-  max-width: 400px;
-  /* border: 1px solid #e0e0e0; */
+  max-width: 350px;
   border-radius: 8px;
   overflow: hidden;
-  /* box-shadow: 0px 4px 10px rgb(241, 244, 249); */
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-
-
 }
 
 .mf_filters_header {
@@ -462,4 +458,9 @@
   color: rgb(78 83 117);
   font-size: 20px;
   font-weight: 600;
+}
+
+.avatar-img {
+  width: 177px;
+  height: 89px;
 }
