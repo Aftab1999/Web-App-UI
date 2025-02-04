@@ -48,6 +48,10 @@ import Pagination from '@mui/material/Pagination';
 
 import AddIcon from '@mui/icons-material/Add';
 import MinimizeIcon from '@mui/icons-material/Minimize';
+import TreandsChat from "../../Components/Charts/Treands-chat"
+import HightgrowthmarketList from "../../Components/Table/Hight-growth-market"
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+
 
 
 function Dashboard() {
@@ -108,6 +112,11 @@ function Dashboard() {
         });
     };
 
+    function handleClick(event) {
+        event.preventDefault();
+        console.info('You clicked a breadcrumb.');
+    }
+
     return (
         <>
             <Header />
@@ -118,15 +127,30 @@ function Dashboard() {
 
                     <Grid item xs={12} md={12} sx={{ mb: 4 }}>
                         <Box className="mt-10">
-                            <Typography >  Home  {">"} Treands </Typography>
+                            {/* <Typography >  Home  {">"} Treands </Typography> */}
+                            <div role="presentation" onClick={handleClick}>
+                                <Breadcrumbs aria-label="breadcrumb">
+                                    <Link underline="hover" color="inherit" href="/">
+                                        Trends
+                                    </Link>
+                                    <Link
+                                        underline="hover"
+                                        color="inherit"
+                                        href="/material-ui/getting-started/installation/"
+                                    >
+                                        Mega Trends
+                                    </Link>
+                                    <Typography sx={{ color: 'text.primary' }}> Artificial intelligence </Typography>
+                                </Breadcrumbs>
+                            </div>
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={12} sx={{ mb: 3 }}>
+                    {/* <Grid item xs={12} md={12} sx={{ mb: 3 }}>
                         <Box >
                             <Typography variant='h4' className='mutual-header-text'>  Treands </Typography>
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
                 </Grid>
 
@@ -447,13 +471,17 @@ function Dashboard() {
 
                     <Grid item xs={12} md={8}>
 
+                        <Typography className='trends-header'> High Growth Markets </Typography>
 
+                        <Box>
+                            <TreandsChat />
+                        </Box>
 
-
-
-
-
+                        <Box>
+                            <HightgrowthmarketList />
+                        </Box>
                     </Grid>
+
 
                 </Grid>
 
