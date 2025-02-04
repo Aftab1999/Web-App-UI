@@ -50,6 +50,7 @@ import AddIcon from '@mui/icons-material/Add';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 import TreandsChat from "../../Components/Charts/Treands-chat"
 import HightgrowthmarketList from "../../Components/Table/Hight-growth-market"
+import Largestmarketlist from "../../Components/Table/largestmarket";
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 
@@ -480,6 +481,10 @@ function Dashboard() {
                         <Box>
                             <HightgrowthmarketList />
                         </Box>
+                        <Box>
+                            <Largestmarketlist />
+                        </Box>
+
                     </Grid>
 
 
