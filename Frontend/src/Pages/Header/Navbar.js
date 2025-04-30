@@ -88,12 +88,12 @@ export default function Navbar() {
                     </div>
 
                     <div className="nav-links">
-                        <Button href="/" className="nav-link">
+                        <Button href="/treands" className="nav-link">
                             Home
                         </Button>
 
                         <Button className="nav-link" endIcon={<ExpandMore />} onClick={handleLandingsClick}>
-                            Landings
+                            Insights
                         </Button>
                         <Menu anchorEl={landingsAnchor} open={Boolean(landingsAnchor)} onClose={handleClose}>
                             {landingPages.map((page) => (
@@ -103,17 +103,22 @@ export default function Navbar() {
                             ))}
                         </Menu>
 
-                        <Button href="/blocks" className="nav-link">
-                            Blocks
+                        <Button href="/treands" className="nav-link">
+                            Treands
                         </Button>
 
-                        <Button href="/dashboard" className="nav-link">
-                            Dashboard
+                        <Button href="/treands" className="nav-link">
+                            Companies
+                        </Button>
+
+                        <Button href="/treands" className="nav-link">
+                            News
                         </Button>
 
                         <Button className="nav-link" endIcon={<ExpandMore />} onClick={handlePagesClick}>
-                            Pages
+                            Tools
                         </Button>
+
                         <Menu anchorEl={pagesAnchor} open={Boolean(pagesAnchor)} onClose={handleClose}>
                             {pages.map((page) => (
                                 <MenuItem key={page.path} onClick={handleClose} component="a" href={page.path}>
@@ -123,7 +128,11 @@ export default function Navbar() {
                         </Menu>
 
                         <Button href="/docs" className="nav-link">
-                            Docs
+                            Admin
+                        </Button>
+
+                        <Button href="/docs" className="nav-link">
+                            AI
                         </Button>
                     </div>
 
@@ -160,7 +169,7 @@ export default function Navbar() {
                             <ListItemText primary="Blocks" />
                         </ListItem>
 
-                        <ListItem button component="a" href="/dashboard">
+                        <ListItem button component="a" href="/treands">
                             <ListItemText primary="Dashboard" />
                         </ListItem>
 

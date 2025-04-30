@@ -7,6 +7,9 @@ import Slider from '@mui/material/Slider';
 import { ScatterChart } from '@mui/x-charts/ScatterChart';
 
 
+// https://www.apexcharts.com/javascript-chart-demos/line-charts/
+
+
 
 const data = [
     { x1: 529.39, y1: 643.28, x2: 191.29, y2: -46.1, id: 'data-0' },
