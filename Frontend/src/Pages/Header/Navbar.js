@@ -88,7 +88,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="nav-links">
-                        <Button href="/treands" className="nav-link">
+                        <Button href="/home-anding" className="nav-link">
                             Home
                         </Button>
 

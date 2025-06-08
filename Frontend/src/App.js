@@ -10,6 +10,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Settings from './Pages/Dashboard/Settings';
 import Header from './Pages/Header/Navbar';
 import Treands from './Pages/Trends/Treands';
+import Homelanding from './Pages/HomeLanding/Home-landing';
 import { muiBlueTheme } from './utils/mui/themes'
 import { ThemeProvider } from '@mui/material/styles'
 
@@ -26,6 +27,7 @@ function App() {
           {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/header" element={<Header />} />
           <Route path="/treands" element={<Treands />} />
+          <Route path="/home-anding" element={<Homelanding />} />
           <Route path="/coming-soon" element={<Settings />} />
         </Routes>
       </Router>
